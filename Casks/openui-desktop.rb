@@ -1,13 +1,13 @@
 cask "openui-desktop" do
   arch arm: "arm64", intel: "x64"
-  version "1.0.45"
+  version "1.0.46"
 
   if Hardware::CPU.arm?
     url "https://github.com/mahitoburrito/openui-desktop/releases/download/v#{version}/OpenUI-#{version}-arm64.dmg"
-    sha256 "e12c17da710dd3ffc6f646a22d73a3216ec55b30be9d1cd679ab2b764d677dec"
+    sha256 "5af9d8346971b7916b9e6718b1ab2928f52a39cee4680dec228dd4c6f9a832b1"
   else
     url "https://github.com/mahitoburrito/openui-desktop/releases/download/v#{version}/OpenUI-#{version}-x64.dmg"
-    sha256 "c839af83c755f313618d133680a99325360ba137967b1b106b21bff7a7368751"
+    sha256 "415e00abcb8ae2b80f334452d96ecbc0b8d6db1a42402545a4ac686913507149"
   end
 
   name "OpenUI Desktop"
